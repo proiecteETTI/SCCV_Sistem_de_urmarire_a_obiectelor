@@ -68,6 +68,9 @@ python train.py --device 0 --data CaltechPedestrian.yaml --epochs 1 --weights ''
 python detect.py --weights runs/train/exp/weights/best.pt --source ../dataset/images/test --device 0
 ```
 
+# MAIN
+Fisierul principal este `proiect.ipynb` care primeste la intrare un fisier video si la final returneaza tot un fisier video unde au fost detectate si identificate persoanele. In acest fisier se prelucreaza fiecare frame. Intai se aplica YOLOv8n, apoi se extrag trasaturi cu reteau CNN din cadrul proiectului DeepSORT, iar apoi face o predictie a pozitiei persoanelor urmarite.
+
 # Rezultate
 <img src="result/frames/1554.jpg" alt="Descriere" width="400">
 <img src="result/frames/1148.jpg" alt="Descriere" width="400">
